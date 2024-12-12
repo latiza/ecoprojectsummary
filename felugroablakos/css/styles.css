@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.fejlec{
+    font-size: 25px;
+    text-align: center;
+    background-image: linear-gradient(to right,rgb(0, 255, 123), rgb(0, 157, 255));
+}
+.keret{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    background-color: rgb(68, 196, 221);
+    padding: 30px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.belso-keret{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: white;
+    width: 220px;
+    /*height: 350px;*/
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: trans 0.3 ease, shadow 0.3 ease;
+}
+a:hover{
+    transform: scale(1.03);
+}
+img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray;
+}
+h2{
+    justify-self: center;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.text-data{
+    text-align: justify;
+    font-size: 12px;
+}
+.author{
+    font-style: italic;
+    text-align: end;
+    margin-top: 5px;
+}
+.lapozo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: start;
+    margin-top: 5px;
+}
+.hidden{
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-content p {
+    margin: 0;
+}
+
+.close-btn {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: #5bc0de;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover, .close-btn:hover {
+    opacity: 0.9;
+}
+
+/*----------------------------
+modal
+-----------------------------*/
+/* Modal alapstílus */
+.modal {
+    display: none; /* Alapértelmezett rejtett állapot */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 10%; /* Magasabb pozíció */
+    width: 100%;
+    height: 80%; /* Magasabb modal */
+    overflow: auto; /* Görgetés engedélyezése */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #333;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  /* Modal tartalom */
+  .modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    max-height: 90%; /* A tartalom ne lépje túl az ablakot */
+    overflow-y: auto; /* Függőleges görgetés */
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Modal kép */
+  .modal-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Modal cím */
+  .modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Modal szöveg */
+  .modal-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  /* Modal szerző */
+  .modal-author {
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Bezárás gomb */
+  .close-modal {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -10px;
+  }
+  
+  .close-modal:hover {
+    color: red;
+  }
+  
